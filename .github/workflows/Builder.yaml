@@ -2,9 +2,9 @@ name: Builder
 
 on:
   push:
-    branches:
-      - master
-
+    tags:
+      - "v*"
+  workflow_dispatch:
 env:
   CMAKE_VERSION: 3.25.2
   LLVM_VERSION: 15.0.6
